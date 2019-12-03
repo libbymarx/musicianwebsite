@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Studio Killers Gallery</title>
+<link href="CSS/studiokillersCSS.css" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+    <style>
+body {
+	background-image: url("img/DMD%20Website%20Animated%20Background.gif");
+        background-repeat:repeat;
+       background-size:145%;
+    background-position: center;
+} 
+
+</style>
+</head>
+<body>
+    
+    <img src="img/StudioKillersTitle.png" alt="Studio Killers" width=900px id="titleimage"/>
+    <br>
+    <div id="navbar">
+    <a href="StudioKillersHomepage.html"><strong>Home</strong></a>
+    <a href="StudioKillersAboutUs.html"><strong>About Us</strong></a>
+    <a href="StudioKillersMusic.html"><strong>Music</strong></a>
+    <a href="StudioKillersGallery.html"><strong>Gallery</strong></a>
+    </div>
+
+<div class="bodyinfofour">
+    <br>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+     <img src="img/maxresdefault.jpg" alt="Cherry Art" style="width:100%">
+    <div class="text">Art of Cherry</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="img/d053e5e986920adacb8aa6d4b172f018_original.jpg" alt="Cherry Art" style="width:100%">
+    <div class="text">Live Concert</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="img/tumblr_pwpkt8ujgx1qlx1uro1_500.jpg" alt="art" style="width:100%">
+    <div class="text">Artwork Promoting Show Funraiser</div>
+  </div>
+    
+      <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="img/tumblr_pu7w6p3cLp1qlx1uro1_500.jpg" alt="art" style="width:100%">
+    <div class="text">Art of Cherry and Jenny</div>
+  </div>
+    
+      <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="img/tumblr_pkat6clHjx1qlx1uro1_500.jpg" alt="art" style="width:100%">
+    <div class="text">Art of Cherry</div>
+  </div>
+    
+      <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="img/tumblr_pbpxftnoQH1qlx1uro1_500.jpg" alt="art" style="width:100%">
+    <div class="text">Art Promoting "Party Like it's your Birthday" Music Video</div>
+  </div>
+    
+      <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="img/tumblr_pal9bcyeFe1qlx1uro1_500.jpg" alt="art" style="width:100%">
+    <div class="text">Art Promoting "Party Like it's your Birthday" Music Video</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+    
+    <script>var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+    
+    </div>
+    
+          <footer>
+    <p>Contact:  ilmarx1ilstu.edu  |  123-456-7890  |  1234 Fake Address Ave. Normal, IL<br>
+          Libby Marx | Musician Website | Digital Media Design II | Fall 2019</p>
+  </footer>
+
+</body>
+</html>
